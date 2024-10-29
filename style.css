@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sidebar {
+    width: 300px;
+    background: #030303;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column; /* Permet d'organiser les éléments verticalement */
+}
+.sidebar-nav {
+    flex-grow: 1; /* Permet à cette partie de prendre tout l'espace disponible */
+}
+
+.sidebar-nav.box2 {
+    position: absolute; /* Positionne la box2 de manière absolue */
+    bottom: 0; /* Place la box2 en bas de la sidebar */
+    width: 100%; /* Assurez-vous qu'elle prend la largeur complète */
+    padding-bottom: 20px; /* Ajoutez du padding si nécessaire */
+}
+.sidebar{
+
+border-radius: 10px;
+padding: 20px 10px;
+margin-bottom: 10px ;
+}
+.sidebar-nav .logo {
+width: 120px;
+}
+.sidebar-nav .logo img{
+    width: 100%;
+}
+
+.slidebar-nav ul{
+    list-style: none;
+}
+
+.sidebar-nav ul li {
+    padding: 6px 7px; /* Augmentation du padding vertical */
+    margin-bottom: 10px; /* Ajout d'un espace entre les éléments de la liste */
+}
+.sidebar-nav ul li a :hover {
+    color: #ffffff;
+
+}
+.slidebar-nav ul li a{
+    text-decoration: none;
+    color: #b3b3b3 ;
+    font-size: 16px;
+    font-weight: 600;
+    gap: 100px;
+}
+.slidebar-nav ul li a i {
+   font-size: 20px ;
+   margin-right: 10px;
+   
+}
+.sidebar-nav .ecart img{
+    margin-right: 10px;
+}
+
+.croix{
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 2px;
+
+}
+.coeur {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    width: 20px;
+    height: 20px;
+    background-color: #4E3EA4;
+    border-radius: 2px;
+    
+}
+
+.playlist-item {
+    display: flex;
+    align-items: center; /* Aligne l'image et le texte sur la même ligne */
+    
+}
+
+.croix, .coeur {
+    margin-right: 10px; /* Ajoute de l'espace entre l'image et le texte */
+}
+
+.mots { color: #ffffff;
+
+}
+
+.Library { color: #ffffff;
+
+}
+
+.sidebar-nav .box3{
+
+    height: 1000px;
+}
+
+.privaty ul li a{
+text-decoration: none;
+font-size: 14px;
+font-weight: 600;
+margin:0 6px;
+color: #b3b3b3; /* Ajout de cette ligne pour que le texte soit en blanc */
+
+}
+
+.privary ul li a:hover{
+    text-decoration: underline;
+    }
+
+.privary ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.privary ul li {
+
+    padding: 0 12px;
+    padding-bottom: 8px;
+}
+
+.eng-btn {
+padding: 20px 30px ;
+
+}
+.eng-btn button{
+    padding: 8px 25px ;
+    background: transparent;
+    border: 0;
+    outline: none;
+    color: #ffffff;
+    border: 1px solid #818080;
+    border-radius: 20px ;
+    margin: 20px 0;
+    }
+
+    
+    .main-section {
+        margin-left: 300px;
+        background: #181818;
+        height:  100vh;
+    }
+
+    .main-section .top-nav {
+        padding: 15px 10px;
+        background: #030303;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+    
+
+    }
+
+    
+    .main-section .login-btn {
+        margin-left: auto;
+        display: flex;
+        gap:1470px;
+
+    
+    }
+    .focus{
+        color: #b3b3b3;
+        margin-left: 0;
+    }
+    .show-all {
+        color: #b3b3b3; /* Optionnel, juste pour la visibilité */
+        margin-right: 0;
+    }
+    
+    .spotify-playlist{
+        padding:20px 40px ;
+
+    }
+    .spotify-playlist h2 {
+        color: #ffffff;
+        font-size: 21px ;
+        margin-bottom: 20px;
+
+    }
+    .spotify-playlist .card{
+        display: flex;
+        gap: 18px;
+        overflow: hidden;
+    }
+
+    .spotify-playlist .card .item {
+        width: 100%;
+        min-width: 80px;
+        background-color: #272626;
+       cursor: pointer;
+       border-radius: 6px;
+       padding: 15px;
+       
+    }
+    .spotify-playlist .card h4{
+       color: #ffffff;
+       font-size: 20
+    px;
+       margin-bottom: 4px;
+    }
+
+    .spotify-playlist .card p{
+        color: #b3b3b3;
+        font-size: 15px;
+     }
+    .spotify-playlist .card .item img {
+        width: 100%;
+        border-radius: 6px ;
+        margin-bottom: 5px;
+    }
+
+    .footer-section{
+        padding: 20px 40px;
+    }
+
+    .footer-section .footer {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .footer-section .footer .footer-links {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+    .footer-section .footer .footer-links .footer-column{
+        margin: 0 12px;
+    }
+    .footer-section .footer .footer-links div {
+       color: #fff;
+       font-weight: 600;
+       margin-bottom: 12px;
+       font-size: 16px;
+    }
+    .footer-section .footer .footer-links ul li {
+        list-style:none;
+        margin: 6px 0;
+
+     }
+     .footer-section .footer .footer-links ul li a{
+       text-decoration: none;
+       color: #b3b3b3;
+       font-size: 14px;
+       cursor: pointer;
+     }
+     .footer-section .footer .footer-links ul li a hover{
+        text-decoration: underline;
+        color: #fff;
+      }
+      
+      .social-links {
+        display: flex;
+        justify-content: center; /* Centre les cercles horizontalement */
+        gap: 10px; /* espace entre les cercles */
+    }
+    
+    .social-circle {
+        width: 30px; /* diamètre du cercle */
+        height: 30px;
+        background-color: #292929; /* couleur du cercle */
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .social-circle img {
+        width: 16px; /* taille de l'image dans le cercle */
+        height: 16px;
+    }
+    .preview {
+        display: flex;
+        justify-content:space-between;
+        background: linear-gradient(to right, #ae2896,#509bf5);
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 15px 40px;
+    }
+
+    .preview h4{
+        font-size: 13px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+    .preview p{
+        font-size: 16px;
+        font-weight: 400;
+       
+        color: #fff;
+    }
+    .preview button{
+        padding: 12px 30px;
+        border:0;
+        outline:0;
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #000;
+
+    }
+    
+    
